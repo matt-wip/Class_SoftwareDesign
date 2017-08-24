@@ -26,7 +26,7 @@ package S1_Computus_Easy;
         double k = c % 4;
         double l = (32 + 2*e + 2*i - h - k) % 7;
         double m = Math.floor((a + 11*h + 22*l)/451);
-        double month = Math.floor((h + l - 7*m + 144) / 31);
+        double month = Math.floor((h + l - 7*m + 114) / 31);
         double day = ((h + l - 7*m + 114) % 31) + 1;
 
         return new CustomDate(day,month,dYear);

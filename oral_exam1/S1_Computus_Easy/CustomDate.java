@@ -32,4 +32,6 @@ public class CustomDate {
     String ToString(){
         return (Double.toString(m_iMonth)+"/"+Double.toString(m_iDay)+"/"+Double.toString(m_iYear));
     }
+
+    //todo: have method for converting date to name
 }
