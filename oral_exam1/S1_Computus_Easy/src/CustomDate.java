@@ -5,13 +5,23 @@
 * Description: Basic class for storing dates
 * */
 
-package S1_Computus_Easy;
-
 public class CustomDate {
 
+    // Private members
     private double m_iDay;     // Day of date
     private double m_iMonth;   // Month of date
     private double m_iYear;    // Year of date
+
+    // Accessors
+    public double getDay(){
+        return m_iDay;
+    }
+    public double getMonth(){
+        return m_iMonth;
+    }
+    public double getYear(){
+        return m_iYear;
+    }
 
     // Constructor
     public CustomDate(){
@@ -23,7 +33,7 @@ public class CustomDate {
 
     // Constructor
     CustomDate(double Day, double Month, double Year){
-        //todo: put limit on or check for valid day, month, year
+        //todo: put limit on or check for valid day, month, year. (is this required for the homework?)
         m_iDay = Day;
         m_iMonth = Month;
         m_iYear = Year;
@@ -32,6 +42,4 @@ public class CustomDate {
     String ToString(){
         return (Double.toString(m_iMonth)+"/"+Double.toString(m_iDay)+"/"+Double.toString(m_iYear));
     }
-
-    //todo: have method for converting date to name
 }

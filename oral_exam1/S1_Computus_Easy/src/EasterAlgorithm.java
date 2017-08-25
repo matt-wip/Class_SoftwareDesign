@@ -6,9 +6,7 @@
 * Easter occur in a given year.
 * */
 
-package S1_Computus_Easy;
-
- class EasterAlgorithm {
+class EasterAlgorithm {
 
      static CustomDate GetEasterDate(double dYear){
         // Based on Anonymous Meeus'/Jones/Butcher algorithm at: https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm

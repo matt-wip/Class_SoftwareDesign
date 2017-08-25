@@ -6,8 +6,6 @@
 * Takes an imported year (in arguments), calculates the date Easter is on, and outputs results.
 * */
 
-package S1_Computus_Easy;
-
 public class EasterDayCalculator {
 
     public static void main(String[] args) {
