@@ -6,6 +6,7 @@
 * Takes an imported year (in arguments), calculates the date Easter is on for 5,700,000 years afterwards, and displays results
 * */
 
+
 public class EasterDateCounter {
 
     // Counts the number of times Easter falls on a certain date
@@ -20,8 +21,8 @@ public class EasterDateCounter {
         }
 
         // Create structure for storing date counts
-        double March[] = new double[31];
-        double April[] = new double[30];
+        double dMarch[] = new double[31];
+        double dApril[] = new double[30];
 
         // Go through loop, calculate date, add to structure
         double dEndYear = dYear + 5700000;
@@ -31,21 +32,19 @@ public class EasterDateCounter {
 
             // Add to structure
             if(kDate.getMonth() == 3){
-                March[(int)kDate.getDay() - 1]++;
+                dMarch[(int)kDate.getDay() - 1]++;
             }
             else if(kDate.getMonth() == 4){
-                April[(int)kDate.getDay() - 1]++;
+                dApril[(int)kDate.getDay() - 1]++;
             }
         }
 
         // Display results
         for (int i = 0; i < 31; i++){
-            System.out.println(("March " + (i+1) + ": " + March[i]));
+            System.out.println(("March " + (i+1) + ": " + dMarch[i]));
         }
         for(int i = 0; i < 30; i++){
-            System.out.println(("April " + i + ": " + April[i]));
+            System.out.println(("April " + (i + 1) + ": " + dApril[i]));
         }
-
     }
-
 }

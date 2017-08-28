@@ -32,11 +32,11 @@ public class CustomDate {
     }
 
     // Constructor
-    CustomDate(double Day, double Month, double Year){
+    CustomDate(double day, double month, double year){
         //todo: put limit on or check for valid day, month, year. (is this required for the homework?)
-        m_iDay = Day;
-        m_iMonth = Month;
-        m_iYear = Year;
+        m_iDay = day;
+        m_iMonth = month;
+        m_iYear = year;
     }
 
     String ToString(){
