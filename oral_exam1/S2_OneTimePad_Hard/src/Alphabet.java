@@ -8,7 +8,7 @@
 
 public class Alphabet {
 
-    private final static char alphabet[] = {' ','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    private final static char alphabet[] = {'-','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     /**
      * ToLetter - Takes a number between 1 and 26 and returns the corresponding letter
@@ -18,7 +18,7 @@ public class Alphabet {
     public static char ToLetter(int i){
 
         // Make sure integer is a valid number (1 to 26)
-        if(i < 1 || i > 26){
+        if(i < 0 || i > 26){
             return alphabet[0]; // space character
         }
 

@@ -19,10 +19,11 @@ public class EncryptionManagement {
         // not knowing what the user wants to accomplish (generate key, encrypt, decrypt)
 
         // Create options for this program
-        final String[] sMenuOptions = { "Create new key", "Encrypt a file", "Decrypt a file", "Exit" };
+        final String[] sMenuOptions = { "Create new key", "Encrypt a message", "Decrypt a file", "Exit" };
 
         // Enter loop for manager. Program runs until exited
         Boolean bRun = true;
+        Scanner kTerminal = new Scanner(System.in);
         while (bRun) {
             // Display menu to console
             System.out.println("\nChoose an option from below:");
@@ -32,14 +33,27 @@ public class EncryptionManagement {
             switch (iChoice){
                 case 1:{    // Create new key
                     System.out.println("Enter amount of numbers for key file:");
-                    String sFileLocation = KeyGenerator.CreateNewKey(GetValidEntry(0, 2147483647 ));
-                    System.out.println("Key location: " + sFileLocation);
+                    String sKeyPath = KeyGenerator.CreateNewKey(GetValidEntry(0, 2147483647 ));
+                    System.out.println("Key path: " + sKeyPath);
                     break;
                 }
                 case 2:{    // Encrypt file
+                    System.out.println("Enter message to encrypt:");
+                    String sMessage = kTerminal.nextLine();
+                    System.out.println("Enter key file path:");
+                    String sKeyPath = kTerminal.nextLine();
+
+                    System.out.println("Encryptor message: "+ Encryptor.EncryptMessageWithKey(sKeyPath,sMessage));
                     break;
                 }
                 case 3:{    // Decrypt file
+                    System.out.println("Enter encrypted message path:");
+                    String sMessagePath = kTerminal.nextLine();
+                    System.out.println("Enter key location:");
+                    String sKeyPath = kTerminal.nextLine();
+
+                    System.out.println("Decoded message:");
+                    System.out.println(Decryptor.DecryptMessageWithKey(sKeyPath,sMessagePath));
                     break;
                 }
                 case 4:{    // Exit
@@ -55,6 +69,7 @@ public class EncryptionManagement {
         //end. erase memory
     }
 
+    //todo: move below files and ReadKeyFile into another class(es)
     /**
      * DisplayList - Outputs string array to command prompt
      * @param bNumbered True if list should be numbered, False for plain string text

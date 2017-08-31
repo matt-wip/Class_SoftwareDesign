@@ -38,6 +38,7 @@ public class KeyGenerator {
         // Create file
         File kKeyFile = new File("SecretKey.txt");
         try {
+            kKeyFile.delete();
             kKeyFile.createNewFile(); // replaces file if already exists, or creates new if no file exists
         }
         catch (Exception e){
@@ -50,7 +51,7 @@ public class KeyGenerator {
             PrintWriter kPrinter = new PrintWriter(kOStream,true); // PrintWriter simplifies writing to file
 
             // Write starting value to file
-            // Note: starting value is a random number between 1 and the Range
+            // Note: starting value is a random number between 1 and the Range1
             kPrinter.println((int)(Math.random() * iNumberCount));
 
             // Write key values to file
