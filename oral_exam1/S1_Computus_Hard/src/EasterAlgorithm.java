@@ -8,7 +8,12 @@
 
 class EasterAlgorithm {
 
-     static CustomDate GetEasterDate(double dYear){
+   /**
+    * Algorithm for calculating Easter
+    * @param dYear
+    * @return CustomDate object with the calculated day, month, and year of Easter
+    */
+   static CustomDate GetEasterDate(double dYear){
         // Based on Anonymous Meeus'/Jones/Butcher algorithm at: https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm
         // Assumes Year is a valid year (past 1877)
 
