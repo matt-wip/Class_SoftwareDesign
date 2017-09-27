@@ -34,6 +34,7 @@ public class TextFieldFrame extends JFrame {
 
         // Quiz Part 1
         textField4 = new JTextField("Enter your name here");
+        add(textField4);
 
         // construct passwordfield with default text
         passwordField = new JPasswordField("Hidden text");
