@@ -33,7 +33,7 @@ public class TextFieldFrame extends JFrame {
 
 
         // Quiz Part 1
-        textField4 = new JTextField("Enter name here");
+        textField4 = new JTextField("Enter your name here");
 
         // construct passwordfield with default text
         passwordField = new JPasswordField("Hidden text");
