@@ -12,12 +12,15 @@ import static java.nio.file.StandardOpenOption.CREATE;
 public class Encryptor {
 
     /**
+     * Encodes message based on key file and outputs to a new file
+     * @param sKeyPath Full path of key file
+     * @param sMessage User inputted message to encode
      * @return Path of encrypted message file
      */
     public static String EncryptMessageWithKey(String sKeyPath, String sMessage){
 
         int[] iKeyIndex = {0};
-        int[] iKeyValues = ReadKeyFile(sKeyPath, iKeyIndex);
+        int[] iKeyValues = KeyGenerator.ReadKeyFile(sKeyPath, iKeyIndex);
 
         // Encrypt file
         File kEncryptedMessage = new File("EncryptedMessage.txt");
@@ -35,11 +38,12 @@ public class Encryptor {
             for (char cLetter : sMessage.toCharArray()) {
                 if(Character.isWhitespace(cLetter)){
                     kPrinter.print(' ');
-                    continue;
                 }
-                char cEncryptedLetter = EncryptOneLetter(cLetter,iKeyValues[iKeyIndex[0]%iKeyValues.length]);
-                kPrinter.print(cEncryptedLetter);
-                iKeyIndex[0]++;
+                else{
+                    char cEncryptedLetter = EncryptOneLetter(cLetter,iKeyValues[iKeyIndex[0]]);
+                    kPrinter.print(cEncryptedLetter);
+                    iKeyIndex[0] = (iKeyIndex[0]+1) % iKeyValues.length;
+                }
             }
             kPrinter.close();
             kOStream.close();
@@ -47,41 +51,19 @@ public class Encryptor {
             System.out.println("Error in writing encrypted file: " + e.getMessage());
         }
 
-        //todo: update key index (iKeyIndex value)
+        KeyGenerator.UpdateKeyIndex(sKeyPath, iKeyIndex[0]);
 
         return kEncryptedMessage.getAbsolutePath();
     }
 
+    /**
+     * Uses a custom encoding algorithm to transform one character
+     * @param c Character to encode
+     * @param iKeyValue Number to use in encryption algorithm
+     * @return Encrypted letter
+     */
     private static char EncryptOneLetter(char c, int iKeyValue){
         return Alphabet.ToLetter((iKeyValue + Alphabet.ToNumber(c) - 1) % 26 + 1);
     }
 
-    /**
-     * @param iStartingNumber Starting index in key file to read
-     * @return Array of key values
-     */
-    private static int[] ReadKeyFile(String sKeyPath, int[] iStartingNumber){
-
-        // Read in key file and index
-        // sources: https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html
-        // https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
-        File kKeyFile = new File(sKeyPath);
-        int[] iKeyValues = null;
-        try{
-            kKeyFile.createNewFile();
-            BufferedReader kReader = new BufferedReader(new FileReader(kKeyFile));
-
-            iStartingNumber[0] = Integer.parseInt(kReader.readLine());
-            String[] sKeyValues = kReader.readLine().trim().split("\\s+");
-
-            iKeyValues = new int[sKeyValues.length];
-            for(int i = 0; i < sKeyValues.length; i++){
-                iKeyValues[i] = Integer.parseInt(sKeyValues[i]);
-            }
-        }catch (Exception e){
-            System.out.println("Error in creating key file: " + e.getMessage());
-        }
-
-        return iKeyValues;
-    }
 }

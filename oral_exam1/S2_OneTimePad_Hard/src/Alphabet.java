@@ -38,7 +38,7 @@ public class Alphabet {
         // Find index in alphabet
         for(int i = 1; i < alphabet.length; i++){
             if(letter == alphabet[i]){
-                return i; // converts index of array to count in alphabet
+                return i;
             }
         }
         return 0; // Invalid letter. Return space character index of alphabet array.
