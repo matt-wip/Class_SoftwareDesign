@@ -42,7 +42,7 @@ public abstract class TwoDimension extends Shape {
     public String toString(){
         String message = String.format("Info for object %s: \n", this.getName());
         message += "Area: " + this.getArea() + "\n";
-        message += "Perimeter: " + this.getPerimeter() + "\n";
+        message += "Perimeter: " + this.getPerimeter();
         return  message;
     }
 }

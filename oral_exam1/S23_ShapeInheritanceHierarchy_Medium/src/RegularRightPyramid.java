@@ -41,7 +41,7 @@ public class RegularRightPyramid extends ThreeDimension{
 
     @Override
     public double getVolume() {
-        return (1/3) * this.baseShape.getArea() * this.height;
+        return (1.0/3.0) * this.baseShape.getArea() * this.height;
     }
 
     @Override

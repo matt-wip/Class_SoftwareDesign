@@ -5,24 +5,45 @@
  */
 public class RegularPolygon extends TwoDimension {
 
+    // Private members
     private int sideCount;
     private double sideLength;
 
+    // Constructor
     public RegularPolygon(String name, int sideCount, double sideLength){
         super(name);
 
-        if(sideCount < 3 || sideLength <= 0){
-            throw new IllegalArgumentException("Side count has to be at least 3, and side length have to be greater than 0");
-        }
-        else {
+       this.setSideCount(sideCount);
+       this.setSideLength(sideLength);
+    }
+
+    // Accessors
+    public int getSideCount() {
+        return sideCount;
+    }
+    public void setSideCount(int sideCount) {
+        if(sideCount >= 3){
             this.sideCount = sideCount;
-            this.sideLength = sideLength;
+        }else{
+            throw new IllegalArgumentException("Polygon must have at least 3 sides");
         }
     }
 
+    public double getSideLength() {
+        return sideLength;
+    }
+    public void setSideLength(double sideLength) {
+        if(sideLength > 0) {
+            this.sideLength = sideLength;
+        }else{
+            throw new IllegalArgumentException("Side length must be greater than 0");
+        }
+    }
+
+
     @Override
     public double getArea() {
-        return (Math.pow(this.sideLength,2)*this.sideLength) / (4*Math.tan(180.0/this.sideCount));
+        return 0.5 * this.getApothem() * this.getPerimeter();
     }
 
     @Override
@@ -35,6 +56,6 @@ public class RegularPolygon extends TwoDimension {
      * @return length of apothem
      */
     public double getApothem(){
-        return (this.sideLength / (2.0 * Math.tan(180.0/this.sideCount)));
+        return (this.sideLength / (2.0 * Math.tan(Math.PI / (double)this.sideCount)));
     }
 }

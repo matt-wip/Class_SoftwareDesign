@@ -20,7 +20,7 @@ public abstract class ThreeDimension extends Shape {
     public String toString(){
         String message = String.format("Info for object %s: \n", this.getName());
         message += "Volume: " + this.getVolume() + "\n";
-        message += "Surface area: " + this.getSurfaceArea() + "\n";
+        message += "Surface area: " + this.getSurfaceArea();
         return message;
     }
 }

@@ -24,6 +24,13 @@ public class OneDimension extends Shape {
         this("");
         length = 0;
     }
+
+    @Override
+    public String toString(){
+        String message = String.format("Info for object %s: \n", this.getName());
+        message += "Length: " + this.getLength();
+        return message;
+    }
 }
 
 

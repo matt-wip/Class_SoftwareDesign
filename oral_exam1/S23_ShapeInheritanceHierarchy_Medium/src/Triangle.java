@@ -19,12 +19,14 @@ public abstract class Triangle extends TwoDimension {
     // Constructor
     public Triangle(String name, double sideLengthA, double sideLengthB, double angleC){
         super(name);
+
         this.setAngleC(angleC);
         this.setSideLengthA(sideLengthA);
         this.setSideLengthB(sideLengthB);
     }
 
     // Accessors
+    public double getSideLengthA(){return this.sideLengthA;}
     public void setSideLengthA(double length){
         if(length > 0){
             this.sideLengthA = length;
@@ -34,6 +36,7 @@ public abstract class Triangle extends TwoDimension {
         }
     }
 
+    public double getSideLengthB(){return this.sideLengthB;}
     public void setSideLengthB(double length){
         if(length > 0){
             this.sideLengthB = length;
@@ -55,12 +58,12 @@ public abstract class Triangle extends TwoDimension {
     //
     @Override
     public double getArea() {
-        return (this.sideLengthA * this.sideLengthB * Math.sin(this.angleC))/2.0;
+        return (this.sideLengthA * this.sideLengthB * Math.sin(this.angleC)) / 2.0;
     }
 
     @Override
     public double getPerimeter() {
-        double unknownSideLength = Math.pow(this.sideLengthA,2)+Math.pow(this.sideLengthB,2) - (2.0*this.sideLengthB*this.sideLengthA*Math.cos(this.angleC));
+        double unknownSideLength = Math.pow(this.sideLengthA,2) + Math.pow(this.sideLengthB,2) - (2.0*this.sideLengthB*this.sideLengthA*Math.cos(this.angleC));
         unknownSideLength = Math.sqrt(unknownSideLength);
         return this.sideLengthA + this.sideLengthB + unknownSideLength;
     }

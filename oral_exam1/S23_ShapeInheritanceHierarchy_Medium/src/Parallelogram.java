@@ -14,6 +14,8 @@ public abstract class Parallelogram extends TwoDimension {
 
     // Constructor
     public Parallelogram(String name, double aLength, double bLength){
+        super(name);
+
         this.setSideALength(aLength);
         this.setSideBLength(bLength);
     }

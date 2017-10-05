@@ -24,8 +24,8 @@ public class Line extends OneDimension {
         Vec3d vInitialRot = this.getRotation();
 
         vEndCoord.x = vInitialCoord.x + Math.cos(vInitialRot.x) * this.getLength();
-        vEndCoord.y = vInitialCoord.y + Math.cos(vInitialRot.y) * this.getLength();
-        vEndCoord.z = vInitialCoord.z + Math.cos(vInitialRot.z) * this.getLength();
+        vEndCoord.y = vInitialCoord.y + Math.sin(vInitialRot.x) * this.getLength();
+        vEndCoord.z = vInitialCoord.z + Math.sin(vInitialRot.y) * this.getLength();
 
         return vEndCoord;
     }

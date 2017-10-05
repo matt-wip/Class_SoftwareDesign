@@ -14,6 +14,8 @@ public class RightTriangle extends Triangle{
     public void setAngleC(double angle){
         if(angle != Math.PI/2.0){
             throw new IllegalArgumentException("Right angle triangle has constant pi/2 angle");
+        }else{
+            super.setAngleC(angle);
         }
     }
 }

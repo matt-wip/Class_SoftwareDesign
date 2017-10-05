@@ -55,11 +55,6 @@ public class Shape {
     //endregion
 
     // Constructor
-    public Shape(){
-        this("");
-    }
-
-    // Constructor
     public Shape(String name){
         this.name = name;
 
