@@ -29,4 +29,12 @@ public class RegularPolygon extends TwoDimension {
     public double getPerimeter(){
         return (double)this.sideCount * this.sideLength;
     }
+
+    /**
+     * Calculates the apothem of a regular polygon (center to center of a side)
+     * @return length of apothem
+     */
+    public double getApothem(){
+        return (this.sideLength / (2.0 * Math.tan(180.0/this.sideCount)));
+    }
 }

@@ -22,10 +22,6 @@ public abstract class TwoDimension extends Shape {
         }
     }
 
-    // Sub class methods
-    public abstract double getArea();
-    public abstract double getPerimeter();
-
     // Constructors
     public TwoDimension(String name, Color backGroundColor){
         super(name);
@@ -37,6 +33,10 @@ public abstract class TwoDimension extends Shape {
     public TwoDimension(){
         this("");
     }
+
+    // Abstract class methods
+    public abstract double getArea();
+    public abstract double getPerimeter();
 
     @Override
     public String toString(){
