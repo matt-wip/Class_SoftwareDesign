@@ -25,7 +25,7 @@ public class Rhomboid extends Parallelogram {
         }
         else{
             this.interiorAngle = Math.PI;
-            throw new InvalidParameterException("Angle must be between 0 and PI radians");
+            throw new IllegalArgumentException("Angle must be between 0 and PI radians");
         }
     }
 

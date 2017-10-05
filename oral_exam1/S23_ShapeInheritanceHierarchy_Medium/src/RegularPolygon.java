@@ -11,11 +11,13 @@ public class RegularPolygon extends TwoDimension {
     public RegularPolygon(String name, int sideCount, double sideLength){
         super(name);
 
-        if(sideCount <= 0 || sideLength <= 0){
-            throw new IllegalArgumentException("Side count and side length have to be greater than 0");
+        if(sideCount < 3 || sideLength <= 0){
+            throw new IllegalArgumentException("Side count has to be at least 3, and side length have to be greater than 0");
         }
-        this.sideCount = sideCount;
-        this.sideLength = sideLength;
+        else {
+            this.sideCount = sideCount;
+            this.sideLength = sideLength;
+        }
     }
 
     @Override

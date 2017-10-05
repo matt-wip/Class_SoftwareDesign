@@ -24,7 +24,7 @@ public abstract class Parallelogram extends TwoDimension {
         if(length > 0){
             this.sideALength = length;
         }else {
-            throw new InvalidParameterException("Length can not be less than 0");
+            throw new IllegalArgumentException("Length can not be less than 0");
         }
     }
 
@@ -33,7 +33,7 @@ public abstract class Parallelogram extends TwoDimension {
         if(length > 0){
             this.sideBLength = length;
         }else {
-            throw new InvalidParameterException("Length can not be less than 0");
+            throw new IllegalArgumentException("Length can not be less than 0");
         }
     }
 

@@ -18,7 +18,7 @@ public class Square extends Rectangle {
             super.setSideALength(length);
             super.setSideBLength(length);
         }else {
-            throw new InvalidParameterException("Length can not be less than 0");
+            throw new IllegalArgumentException("Length can not be less than 0");
         }
     }
 
