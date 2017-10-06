@@ -13,8 +13,11 @@ public class EasterDateTest {
         // Source for past Easter dates: https://www.census.gov/srd/www/genhol/easter500.html
         // Txt of dates:                 https://www.census.gov/srd/www/genhol/easter500.txt
 
+        // Members
         CustomDate kCalculatedEasterDate;
         int iFilesCounted = 0;
+
+        // Open file, read in dates line by line and compare to algorithm results
         File kPastEasterDates = new File((getClass().getResource("easter500.txt")).getPath());
         try{
             FileReader kFileReader = new FileReader(kPastEasterDates);

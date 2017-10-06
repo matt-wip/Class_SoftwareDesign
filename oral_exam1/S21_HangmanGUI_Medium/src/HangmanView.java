@@ -43,7 +43,7 @@ public class HangmanView extends JFrame {
         enterGuessButton.addActionListener(listener);
     }
 
-    // Constructor
+    /** Constructor*/
     public HangmanView() {
         // Set main window options
         super("Hangman!");

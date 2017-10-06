@@ -4,7 +4,7 @@
  * File: CalculatorModel.java
  */
 
-/** Background logic and behavior for hangman*/
+/** Background logic for hangman. Model for MVC framework*/
 public class CalculatorModel {
 
     // Private members
@@ -27,6 +27,11 @@ public class CalculatorModel {
         selectedOperation = MathOperatorEnum.ADDITION;
     }
 
+    /**
+     * Takes a previous and new number, does math operator on the previous number
+     * @param newNumber String to convert to new number
+     * @return end result due to math operand
+     */
     public double calculateResult(String newNumber){
         // If number is not valid, return existing result
         if(newNumber == null || newNumber.equals(""))

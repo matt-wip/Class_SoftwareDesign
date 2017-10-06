@@ -10,7 +10,7 @@ class EasterAlgorithm {
 
      static CustomDate GetEasterDate(double dYear){
         // Based on Anonymous Meeus'/Jones/Butcher algorithm at: https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm
-        // Assumes Year is a valid year (past 1877)
+        // Assumes Year is a valid year
 
         double a = dYear % 19;
         double b = Math.floor(dYear/100);

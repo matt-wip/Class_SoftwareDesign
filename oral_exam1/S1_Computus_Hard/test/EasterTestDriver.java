@@ -5,7 +5,7 @@ import org.junit.runner.Result;
     Driver class for testing
     Source: https://stackoverflow.com/questions/2543912/how-do-i-run-junit-tests-from-inside-my-java-application
  */
-public class TestingMain {
+public class EasterTestDriver {
 
     public static void main(String[] args){
         JUnitCore kJUnit = new JUnitCore();
@@ -16,7 +16,7 @@ public class TestingMain {
             System.out.println("Test Run Count:" + kResult.getRunCount());
         }
         catch (Exception e){
-            System.out.println("Error running test from TestingMain: " + e.getMessage());
+            System.out.println("Error running test from EasterTestDriver: " + e.getMessage());
         }
     }
 }

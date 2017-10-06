@@ -14,17 +14,16 @@ public class HangmanController {
     private HangmanModel hangmanModel;
     private HangmanView hangmanView;
 
-    // Constructor
+    /**Constructor*/
     public HangmanController(HangmanView hangmanView, HangmanModel hangmanModel){
         this.hangmanModel = hangmanModel;
         this.hangmanView = hangmanView;
 
-        hangmanView.addGuessButtonListener(new GuessButtonListener());
+        hangmanView.addGuessButtonListener(new GuessButtonHandler());
     }
 
 
-    // Listener for events
-     class GuessButtonListener implements ActionListener{
+     class GuessButtonHandler implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             // Update View if the character is a new guess

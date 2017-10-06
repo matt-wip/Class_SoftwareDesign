@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/** View component of MVC framework. Implements GUI*/
 public class CalculatorView extends JFrame{
 
     // Private members

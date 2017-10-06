@@ -11,7 +11,7 @@ import java.awt.*;
 /**
  * Base class for all shapes to derive from
  */
-public class Shape {
+public abstract class Shape {
 
     //region Private Members
     private String name;

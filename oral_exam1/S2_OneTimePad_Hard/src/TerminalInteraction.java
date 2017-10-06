@@ -7,6 +7,7 @@
 
 import java.util.Scanner;
 
+/** Helper methods for encryption program*/
 public class TerminalInteraction {
 
 

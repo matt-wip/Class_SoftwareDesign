@@ -105,7 +105,9 @@ public class KeyGenerator {
         return iKeyValues;
     }
 
-
+    /**
+     * Writes new key index position to key file
+     */
     public static void UpdateKeyIndex(String sKeyPath, int iNewKeyIndex){
         File kKeyFile = new File(sKeyPath);
         if(!kKeyFile.exists())

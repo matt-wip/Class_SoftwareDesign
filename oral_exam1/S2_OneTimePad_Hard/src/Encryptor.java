@@ -15,7 +15,7 @@ public class Encryptor {
      * Encodes message based on key file and outputs to a new file
      * @param sKeyPath Full path of key file
      * @param sMessage User inputted message to encode
-     * @return Path of encrypted message file
+     * @return Path of encrypted message file if successful, error if failed
      */
     public static String EncryptMessageWithKey(String sKeyPath, String sMessage){
 
@@ -25,6 +25,7 @@ public class Encryptor {
         // Encrypt file
         File kEncryptedMessage = new File("EncryptedMessage.txt");
         try{
+            // Create file, overwrite if it exists
             kEncryptedMessage.delete();
             kEncryptedMessage.createNewFile();
             if(!kEncryptedMessage.exists()){
@@ -34,6 +35,7 @@ public class Encryptor {
             OutputStream kOStream = Files.newOutputStream(kEncryptedMessage.toPath(), CREATE);
             PrintWriter kPrinter = new PrintWriter(kOStream,true); // PrintWriter simplifies writing to file
 
+            // Output key start index and random values to key file
             kPrinter.println(iKeyIndex[0]);
             for (char cLetter : sMessage.toCharArray()) {
                 if(Character.isWhitespace(cLetter)){

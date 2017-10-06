@@ -7,21 +7,24 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/** Linker class for Calculator */
+/** Linker class for CalculatorHard. Controller of MVC framework.*/
 public class CalculatorController {
 
     private CalculatorView calculatorView;
     private CalculatorModel calculatorModel;
 
+    /**
+     * Constructor
+     */
     public CalculatorController(CalculatorView view, CalculatorModel model){
         this.calculatorModel = model;
         this.calculatorView = view;
 
-        view.addNumericButtonListener(new NumericButtonListener());
-        view.addOperatorButtonListener(new OperatorButtonListener());
+        view.addNumericButtonListener(new NumericButtonHandler());
+        view.addOperatorButtonListener(new OperatorButtonHandler());
     }
 
-    class NumericButtonListener implements ActionListener{
+    class NumericButtonHandler implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             // Double check that sender is NumericCharButton
@@ -43,7 +46,7 @@ public class CalculatorController {
         }
     }
 
-    class OperatorButtonListener implements ActionListener{
+    class OperatorButtonHandler implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             if(e.getSource() instanceof OperatorButton){

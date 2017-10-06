@@ -4,8 +4,6 @@
  * File: Parallelogram.java
  */
 
-import java.security.InvalidParameterException;
-
 public abstract class Parallelogram extends TwoDimension {
 
     // Private members
