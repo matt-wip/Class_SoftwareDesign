@@ -49,7 +49,7 @@ public class HangmanView extends JFrame {
     public void setGuessedLettersText(String usedLetters){
         guessedLetters.setText(usedLetters);
     }
-    /** Method to add ActionListener to GuessButton from an outside source {@link HangmanController}
+    /** Method to add ActionListener to GuessButton from an outside source*/
     public void addGuessButtonListener(ActionListener listener){
         enterGuessButton.addActionListener(listener);
     }
