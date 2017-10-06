@@ -1,12 +1,17 @@
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
-/*
-    Driver class for testing
+/**
+    Driver class for testing Easter Algorithm
     Source: https://stackoverflow.com/questions/2543912/how-do-i-run-junit-tests-from-inside-my-java-application
+ * @author Matt Wipfler
  */
 public class EasterTestDriver {
 
+    /**
+     * Main method. Creates and runs a JUnit test and outputs results
+     * @param args Not used
+     */
     public static void main(String[] args){
         JUnitCore kJUnit = new JUnitCore();
 

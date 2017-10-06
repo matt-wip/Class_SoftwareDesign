@@ -5,15 +5,24 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+/**
+ * Class for running JUnit test. Reads in file of 500 Easter dates and compares them to the algorithm results.
+ * @note Source for Easter Dates: https://www.census.gov/srd/www/genhol/easter500.html
+ * @author Matt Wipfler
+ */
 public class EasterDateTest {
 
     @Test
+    /**
+     * Compares file of dates to algorithm results
+     * Prints out the results
+     */
     public void CompareAlgorithmToKnownDates() throws Exception {
 
         // Source for past Easter dates: https://www.census.gov/srd/www/genhol/easter500.html
         // Txt of dates:                 https://www.census.gov/srd/www/genhol/easter500.txt
 
-        // Members
+        // local variables
         CustomDate kCalculatedEasterDate;
         int iFilesCounted = 0;
 

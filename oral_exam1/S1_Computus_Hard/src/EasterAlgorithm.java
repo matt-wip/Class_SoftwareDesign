@@ -6,14 +6,18 @@
 * Easter occur in a given year.
 * */
 
-class EasterAlgorithm {
+/**
+ * Class containing the logic for determining Easter's date
+ * @author Matt Wipfler
+ */
+public class EasterAlgorithm {
 
    /**
-    * Algorithm for calculating Easter
-    * @param dYear
+    * Algorithm for calculating Easter on a given year
+    * @param dYear Year to determine date of Easter in
     * @return CustomDate object with the calculated day, month, and year of Easter
     */
-   static CustomDate GetEasterDate(double dYear){
+   public static CustomDate GetEasterDate(double dYear){
         // Based on Anonymous Meeus'/Jones/Butcher algorithm at: https://en.wikipedia.org/wiki/Computus#Anonymous_Gregorian_algorithm
         // Assumes Year is a valid year (past 1877)
 
