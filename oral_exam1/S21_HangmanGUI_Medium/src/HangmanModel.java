@@ -40,7 +40,9 @@ public class HangmanModel {
 
         // Check if letter has already been guessed
         if(!guessedLetters.contains(guess) && guess != ' '){
-            DecreaseCount();
+            if(secretWord.indexOf(guess) < 0){
+                DecreaseCount();
+            }
             guessedLetters.add(guess);
             flag = true;
         }

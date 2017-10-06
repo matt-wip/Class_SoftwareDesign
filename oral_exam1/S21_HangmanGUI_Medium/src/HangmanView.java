@@ -54,9 +54,9 @@ public class HangmanView extends JFrame {
         // Initialize members
         enterCharacterField = new JTextField();
         enterGuessButton = new JButton("Try guess: ");
-        correctLetters = new JLabel("Hidden word here: ");
-        guessedLetters = new JLabel("guessed letters here: ");
-        guessesLeft = new JLabel("count here: ");
+        correctLetters = new JLabel("");
+        guessedLetters = new JLabel("");
+        guessesLeft = new JLabel("");
 
         // Add GUI objects
         JPanel mainPanel = new JPanel();
@@ -98,6 +98,7 @@ public class HangmanView extends JFrame {
         enterCharacterField.setAlignmentX(CENTER_ALIGNMENT);
         enterCharacterField.setMaximumSize(new Dimension(20, 20));
         enterCharacterField.setHorizontalAlignment(SwingConstants.CENTER);
+        enterGuessButton.setFocusable(false);
 
         // Add components to sub-frame
         kHorizontalFrame.add(new JLabel("Enter guess here:  "));
