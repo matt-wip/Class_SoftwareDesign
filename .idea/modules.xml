@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/oral_exam1/12-9_Calculator_Hard/12-9_Calculator_Hard.iml" filepath="$PROJECT_DIR$/oral_exam1/12-9_Calculator_Hard/12-9_Calculator_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab/20170828-Quiz/20170828-Quiz.iml" filepath="$PROJECT_DIR$/lab/20170828-Quiz/20170828-Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20170901-Quiz/20170901-Quiz.iml" filepath="$PROJECT_DIR$/lab/20170901-Quiz/20170901-Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20170911-Quiz/20170911-Quiz.iml" filepath="$PROJECT_DIR$/lab/20170911-Quiz/20170911-Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20170918_Quiz/20170918_Quiz.iml" filepath="$PROJECT_DIR$/lab/20170918_Quiz/20170918_Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20170927_Quiz/20170927_Quiz.iml" filepath="$PROJECT_DIR$/lab/20170927_Quiz/20170927_Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20170929_Quiz/20170929_Quiz.iml" filepath="$PROJECT_DIR$/lab/20170929_Quiz/20170929_Quiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch03/Fig03_12/Fig03_12.iml" filepath="$PROJECT_DIR$/class_demos/ch03/Fig03_12/Fig03_12.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch03/Fig03_13/Fig03_13.iml" filepath="$PROJECT_DIR$/class_demos/ch03/Fig03_13/Fig03_13.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch04/Fig04_04-05/Fig04_04-05.iml" filepath="$PROJECT_DIR$/class_demos/ch04/Fig04_04-05/Fig04_04-05.iml" />
@@ -52,9 +58,12 @@
       <module fileurl="file://$PROJECT_DIR$/class_demos/supplemental/HelloTemp/HelloTemp.iml" filepath="$PROJECT_DIR$/class_demos/supplemental/HelloTemp/HelloTemp.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/supplemental/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/class_demos/supplemental/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab/Myfig2-6/Myfig2-6.iml" filepath="$PROJECT_DIR$/lab/Myfig2-6/Myfig2-6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oral_exam1/S1_Computus_Easy/S1_Computus_Easy.iml" filepath="$PROJECT_DIR$/oral_exam1/S1_Computus_Easy/S1_Computus_Easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extra_credit/S1_Computus_Easy/S1_Computus_Easy.iml" filepath="$PROJECT_DIR$/extra_credit/S1_Computus_Easy/S1_Computus_Easy.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam1/S1_Computus_Hard/S1_Computus_Hard.iml" filepath="$PROJECT_DIR$/oral_exam1/S1_Computus_Hard/S1_Computus_Hard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oral_exam1/S1_Computus_Medium/S1_Computus_Medium.iml" filepath="$PROJECT_DIR$/oral_exam1/S1_Computus_Medium/S1_Computus_Medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extra_credit/S1_Computus_Medium/S1_Computus_Medium.iml" filepath="$PROJECT_DIR$/extra_credit/S1_Computus_Medium/S1_Computus_Medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extra_credit/S21_HangmanGUI_Hard/S21_HangmanGUI_Hard.iml" filepath="$PROJECT_DIR$/extra_credit/S21_HangmanGUI_Hard/S21_HangmanGUI_Hard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam1/S21_HangmanGUI_Medium/S21_HangmanGUI_Medium.iml" filepath="$PROJECT_DIR$/oral_exam1/S21_HangmanGUI_Medium/S21_HangmanGUI_Medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam1/S23_ShapeInheritanceHierarchy_Medium/S23_ShapeInheritanceHierarchy_Medium.iml" filepath="$PROJECT_DIR$/oral_exam1/S23_ShapeInheritanceHierarchy_Medium/S23_ShapeInheritanceHierarchy_Medium.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam1/S2_OneTimePad_Hard/S2_OneTimePad_Hard.iml" filepath="$PROJECT_DIR$/oral_exam1/S2_OneTimePad_Hard/S2_OneTimePad_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch15/SerializationApps/SerializationApps.iml" filepath="$PROJECT_DIR$/class_demos/ch15/SerializationApps/SerializationApps.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/supplemental/SupermarketSimulation/SupermarketSimulation.iml" filepath="$PROJECT_DIR$/class_demos/supplemental/SupermarketSimulation/SupermarketSimulation.iml" />

@@ -6,7 +6,12 @@ public class EmployeeTest {
         Date birth = new Date(7, 24, 1949);
         Date hire = new Date(3, 12, 1988);
         Employee employee = new Employee("Bob", "Blue", birth, hire);
+        System.out.println(employee);
 
+        birth.setDate(8,9,1996);
+        hire.setDate(1,23,2015);
+        Employee employee2 = new Employee("Matt","Wipfler",birth,hire);
+        System.out.println(employee2);
         System.out.println(employee);
     }
 } // end class EmployeeTest

@@ -10,7 +10,7 @@ public class EmployeeTest {
 
         birth.setDate(8,9,1996);
         hire.setDate(23,1,2015);
-        Employee employee2 = new Employee("Matt","Wipfler",birth,hire);
+        Employee employee2 = new Employee("Matt","Wipfler", birth, hire);
         System.out.println(employee2);
         System.out.println(employee);
     }

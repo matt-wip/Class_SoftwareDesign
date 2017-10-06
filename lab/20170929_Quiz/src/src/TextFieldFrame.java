@@ -81,6 +81,7 @@ public class TextFieldFrame extends JFrame {
             // display JTextField content
             JOptionPane.showMessageDialog(null, string);
         }
+
     } // end private inner class TextFieldHandler
 } // end class TextFieldFrame
 
