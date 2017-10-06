@@ -1,20 +1,18 @@
 /*
-        * Name: Matthew Wipfler
-        * Date: 10/4/17
-        * File: RightCylinder.java
-        */
+   * Name: Matthew Wipfler
+   * Date: 10/6/17
+   * File: RightGenericPrism.java
+*/
 
 /**
- * Code for creating a right angle cylinder. Bases are parallel and have centroids lining up 90 degrees to faces
+ * Code for creating a generic Right prism. Bases are parallel and have centroids lining up 90 degrees to faces
  * @author Matt Wipfler
- * @NOTE: Right Cylinder is obsolete. Use RightGenericPrism instead
- * @see RightGenericPrism
  */
-public class RightCylinder extends ThreeDimension {
+public class RightGenericPrism extends ThreeDimension {
 
     // Private members
     /** Faces shape- oval or circle*/
-    private Oval baseShape;
+    private TwoDimension baseShape;
     /** Distance from one face to the other*/
     private double height;
 
@@ -25,7 +23,7 @@ public class RightCylinder extends ThreeDimension {
      * @param baseShape Shape of base
      * @param height Distance from face to face
      */
-    public RightCylinder(String name, Oval baseShape, double height){
+    public RightGenericPrism(String name, TwoDimension baseShape, double height){
         super(name);
 
         this.setBaseShape(baseShape);
@@ -33,9 +31,9 @@ public class RightCylinder extends ThreeDimension {
     }
 
     // Accessors
-    /** Accessor for height. Cannot be less than 0*/
+    /** Accessor for prism height*/
     public double getHeight(){return this.height;}
-    /** Assessor for setting height*/
+    /** Accessor for setting prism height. Cannot be less than 0*/
     public void setHeight(double height){
         if(height > 0){
             this.height = height;
@@ -45,10 +43,10 @@ public class RightCylinder extends ThreeDimension {
         }
     }
 
-    /** Accessor for getting base shape*/
-    public Oval getBaseShape() {return baseShape;}
-    /** Accessor for setting base shape. Can not be null*/
-    public void setBaseShape(Oval shape){
+    /** Accessor for getting prism base shape*/
+    public TwoDimension getBaseShape() {return baseShape;}
+    /** Accessor for setting prism base shape. Can not be null*/
+    public void setBaseShape(TwoDimension shape){
         if(shape != null){
             this.baseShape = shape;
         }
@@ -58,13 +56,13 @@ public class RightCylinder extends ThreeDimension {
     }
 
     @Override
-    /** Implementation of abstract class 3D. Returns prism volume*/
+    /** Implementation of abstract class 3D. Returns volume of prism*/
     public double getVolume() {
         return this.baseShape.getArea() * this.height;
     }
 
     @Override
-    /** Implementation of abstract class 3D. Returns prism surface area*/
+    /** Implementation of abstract class 3D. Returns SA of prism*/
     public double getSurfaceArea() {
         double faceSA = 2.0 * this.baseShape.getArea();
         return faceSA + this.baseShape.getPerimeter() * this.height;

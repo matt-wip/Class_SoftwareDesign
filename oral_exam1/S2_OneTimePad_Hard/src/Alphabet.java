@@ -6,8 +6,13 @@
     * an integer to letter and from a number to an integer.
 */
 
+/**
+ * Class for converting a number into a letter and vice versa
+ * @author Matt Wipfler
+ */
 public class Alphabet {
 
+    /** Array of letters and a special char. Final, static.*/
     private final static char alphabet[] = {'-','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     /**

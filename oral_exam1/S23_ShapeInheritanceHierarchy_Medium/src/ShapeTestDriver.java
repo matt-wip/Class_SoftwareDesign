@@ -7,8 +7,16 @@
 import com.sun.javafx.geom.Vec3d;
 import javafx.scene.shape.Cylinder;
 
+/**
+ * Driver class for ShapeInheritance. Creates a bunch of shapes and displays their information to the terminal
+ * @author Matt Wipfler
+ */
 public class ShapeTestDriver {
 
+    /**
+     * Main method to run
+     * @param args No arguments used
+     */
     public static void main(String[] args){
 
         OneDimensionObjects();
@@ -18,6 +26,9 @@ public class ShapeTestDriver {
         System.out.println("Completed Shape Testing");
     }
 
+    /**
+     * Helper method for displaying one dimension objects and capabilities
+     */
     private static void OneDimensionObjects(){
         System.out.println("*** TESTING ONE DIMENSION ***");
 
@@ -29,6 +40,9 @@ public class ShapeTestDriver {
         System.out.println("Line color: " + kLine.getColor().toString());
     }
 
+    /**
+     * Helper method for displaying two dimension objects and capabilities
+     */
     private static void TwoDimensionObjects(){
         System.out.println("\n*** TESTING TWO DIMENSIONS ***");
 
@@ -65,6 +79,9 @@ public class ShapeTestDriver {
 
     }
 
+    /**
+     * Helper method for displaying three dimension objects and capabilities
+     */
     private static void ThreeDimensionObjects(){
         System.out.println("\n*** TESTING THREE DIMENSIONS ***");
 
@@ -79,5 +96,9 @@ public class ShapeTestDriver {
         RegularRightPrism kPrism = new RegularRightPrism("Right prism", new RegularPolygon("hexagon",6,2),6);
         System.out.println(kPrism.toString());
         System.out.println(String.format("Prism height: %s. Base info:: %s",kPrism.getHeight(), kPrism.getBaseShape().toString())+"\n");
+
+        RightGenericPrism kGeneral = new RightGenericPrism("Generic prism with Rhombus base",new Rhombus("rhombus",3,Math.PI/6.0),4.0);
+        System.out.println(kGeneral.toString());
+        System.out.println(String.format("Prism height: %s. Base info:: %s",kGeneral.getHeight(), kGeneral.getBaseShape().toString())+"\n");
     }
 }

@@ -9,6 +9,11 @@ import java.io.*;
 import java.nio.file.Files;
 import static java.nio.file.StandardOpenOption.CREATE;
 
+/**
+ * Provides logic for encrypting a message using a custom algorithm
+ * Uses a key file for algorithm seed
+ * @see Decryptor
+ */
 public class Encryptor {
 
     /**

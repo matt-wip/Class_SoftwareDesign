@@ -9,6 +9,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+/**
+ * GUI for hangman application. Extends JFrame
+ * @author Matt Wipfler
+ */
 public class HangmanView extends JFrame {
 
     // Private members

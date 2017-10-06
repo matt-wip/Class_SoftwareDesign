@@ -7,6 +7,11 @@
 
 import java.io.*;
 
+/**
+ * Provides logic for reading a message from an encrypted file
+ * Uses custom algorithm that complements {@link Encryptor}
+ * @author Matt Wipfler
+ */
 public class Decryptor {
 
     /**

@@ -6,9 +6,39 @@
 
 import com.sun.javafx.geom.Vec3d;
 
+/**
+ * Line class for creating and manipulating a line
+ * @author Matt Wipfler
+ */
 public class Line extends OneDimension {
 
+    /** length of straight line*/
+    private double length;
+
+    @Override
+    /**
+     * Implementation of abstract 1D class.
+     * Returns length of 1D object
+     */
+    public double getLength() {
+        return this.length;
+    }
+
+    @Override
+    /**
+     * Implementation of abstract 1D class.
+     * Sets length of 1D object
+     */
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     // Constructor
+    /**
+     * Constructor
+     * @param name Name of Shape
+     * @param length lenght of line (unitless)
+     */
     public Line(String name, double length){
         super(name);
         this.setLength(length);

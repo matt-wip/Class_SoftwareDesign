@@ -7,7 +7,10 @@
 
 import java.util.Scanner;
 
-/** Helper methods for encryption program*/
+/**
+ * Helper methods for encryption program and reading/writing from Terminal
+ * @author Matt Wipfler
+ */
 public class TerminalInteraction {
 
 
@@ -50,6 +53,7 @@ public class TerminalInteraction {
     }
 
     /**
+     * Gets a user inputted integer
      * @return Prompts and gets a number from the terminal
      */
     public static int GetNumberFromTerminal(){

@@ -7,11 +7,16 @@
 
 import java.util.Scanner;
 
+/**
+ * Provides logic for creating/reading encrypted messages using files
+ * @author Matt Wipfler
+ */
 public class EncryptionManagement {
 
     /**
      * Method to run for encryption program to work
-     * @param args In this code, there are no necessary arguments
+     * Runs program through command line until user exits
+     * @param args No necessary arguments
      */
     public static void main(String[] args) {
 

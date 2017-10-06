@@ -11,8 +11,11 @@ import java.util.Scanner;
 
 import static java.nio.file.StandardOpenOption.CREATE;
 
+/**
+ * Provides methods for creating, updating, and reading Key files
+ * @author Matt Wipfler
+ */
 public class KeyGenerator {
-
 
     /**
      * CreateNewKey - Generates a file of random ints (0-1000) with count n
@@ -107,6 +110,8 @@ public class KeyGenerator {
 
     /**
      * Writes new key index position to key file
+     * @param sKeyPath Full path to key file
+     * @param iNewKeyIndex New index for key to start from
      */
     public static void UpdateKeyIndex(String sKeyPath, int iNewKeyIndex){
         File kKeyFile = new File(sKeyPath);
