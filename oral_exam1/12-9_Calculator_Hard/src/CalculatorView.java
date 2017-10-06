@@ -9,40 +9,62 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-/** View component of MVC framework. Implements GUI*/
+/**
+ * View component of MVC framework. Implements GUI in framework. Derives from JFrame
+ * @author Matt Wipfler
+ */
+
 public class CalculatorView extends JFrame{
 
     // Private members
+    /** Number button for '0'*/
     private final NumericCharButton zeroButton;
+    /** Number button for '1'*/
     private final NumericCharButton oneButton;
+    /** Number button for '2'*/
     private final NumericCharButton twoButton;
+    /** Number button for '3'*/
     private final NumericCharButton threeButton;
+    /** Number button for '4'*/
     private final NumericCharButton fourButton;
+    /** Number button for '5'*/
     private final NumericCharButton fiveButton;
+    /** Number button for '6'*/
     private final NumericCharButton sixButton;
+    /** Number button for '7'*/
     private final NumericCharButton sevenButton;
+    /** Number button for '8'*/
     private final NumericCharButton eightButton;
+    /** Number button for '9'*/
     private final NumericCharButton nineButton;
+    /** Number button for '.'*/
     private final NumericCharButton dotButton;
 
+    /** Operator button for '=' */
     private final OperatorButton equalButton;
+    /** Operator button for '+' */
     private final OperatorButton plusButton;
+    /** Operator button for '-' */
     private final OperatorButton minusButton;
+    /** Operator button for '*' */
     private final OperatorButton timesButton;
+    /** Operator button for '/' */
     private final OperatorButton divideButton;
 
+    /** Display for getting and setting numbers*/
     private final JTextField inputField;
 
     // Accessors
+    /** Accessor for outputting current number in display*/
     public String getInputText() {
         return inputField.getText();
     }
+    /** Accessor for applying new number in display*/
     public void setInputText(String input) {
         this.inputField.setText(input);
     }
-    public OperatorButton getEqualButton() {return equalButton;}
 
-    // Constructor
+    /** Constructor*/
     public CalculatorView(){
         // Set main window options
         super("Calculator");
@@ -52,6 +74,7 @@ public class CalculatorView extends JFrame{
         this.setResizable(false);
 
         // Initialize members
+        // note: here so final modifier is valid
         zeroButton = new NumericCharButton('0');
         oneButton = new NumericCharButton('1');
         twoButton = new NumericCharButton('2');
@@ -115,7 +138,9 @@ public class CalculatorView extends JFrame{
     // Private Methods
     // used to use a helper in constructor to initialize members, changed for final modifier
 
-    /** helper method for creating GUI*/
+    /** helper method for creating GUI
+     * @param buttonPanel Panel to add NumberButtons to
+     */
     private void _AddControls(JPanel buttonPanel){
         buttonPanel.add(sevenButton, 0);
         buttonPanel.add(eightButton,1);

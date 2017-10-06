@@ -8,11 +8,20 @@
 public class CalculatorModel {
 
     // Private members
+    /** Previous number of calculator*/
     private double result;
+    /** User selected Operator*/
     private MathOperatorEnum selectedOperation;
 
     // Accessors
+    /** Sets the desired operator.
+     * @see CalculatorController*/
     public void setMathOperation(MathOperatorEnum mathOperation){this.selectedOperation = mathOperation;}
+
+    /**
+     * Sets the previous number of calculator
+     * @param newNumber String to convert to number
+     */
     public void setResult(String newNumber){
         if(newNumber == null || newNumber.equals("")){
             result = 0;}
@@ -21,7 +30,7 @@ public class CalculatorModel {
         }
     }
 
-    // Constructor
+    /**Constructor*/
     public CalculatorModel() {
         result = 0;
         selectedOperation = MathOperatorEnum.ADDITION;
