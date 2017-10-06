@@ -6,8 +6,8 @@
 
 /**
  * Code for creating a right angle cylinder. Bases are parallel and have centroids lining up 90 degrees to faces
+ * NOTE: Right Cylinder is obsolete. Use RightGenericPrism instead
  * @author Matt Wipfler
- * @NOTE: Right Cylinder is obsolete. Use RightGenericPrism instead
  * @see RightGenericPrism
  */
 public class RightCylinder extends ThreeDimension {

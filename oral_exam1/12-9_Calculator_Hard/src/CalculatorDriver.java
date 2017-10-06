@@ -11,7 +11,8 @@
  */
 public class CalculatorDriver {
 
-    /** Main method. Does not use any arguments*/
+    /** Main method. Does not use any arguments
+     * @param args No arguments used*/
     public static void main(String[] args){
         CalculatorView view = new CalculatorView();
         CalculatorModel model = new CalculatorModel();

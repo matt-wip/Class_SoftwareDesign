@@ -7,8 +7,8 @@
 /**
  * Class for creating a 3D prism where the faces are a regular polygon.
  * Faces are parallel and are centered over one another
+ * NOTE: RegularRightPrism is obsolete. Use RightGenericPrism instead
  * @author Matt Wipfler
- * @NOTE: RegularRightPrism is obsolete. Use RightGenericPrism instead
  * @see RightGenericPrism
  */
 public class RegularRightPrism extends ThreeDimension{

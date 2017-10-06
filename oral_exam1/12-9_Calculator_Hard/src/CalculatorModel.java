@@ -15,6 +15,7 @@ public class CalculatorModel {
 
     // Accessors
     /** Sets the desired operator.
+     * @param mathOperation Math enum for setting calculator's operation
      * @see CalculatorController*/
     public void setMathOperation(MathOperatorEnum mathOperation){this.selectedOperation = mathOperation;}
 

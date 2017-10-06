@@ -39,7 +39,7 @@ public class RegularPolygon extends TwoDimension {
 
     /**
      * Accessor to set Side count
-     * @param sideCount Desired number of sides, >3
+     * @param sideCount Desired number of sides,
      */
     public void setSideCount(int sideCount) {
         if(sideCount >= 3){

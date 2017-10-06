@@ -8,7 +8,7 @@
 /**
  * Class for storing a day, month, and year number
  * @author Matt Wipfler
- * @note Created due to constrains on homework (no standard date class)
+ * note: Created due to constrains on homework (no standard date class)
  */
 public class CustomDate {
 

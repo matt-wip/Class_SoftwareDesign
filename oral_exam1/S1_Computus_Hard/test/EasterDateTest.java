@@ -1,5 +1,5 @@
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.*;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.FileReader;
 
 /**
  * Class for running JUnit test. Reads in file of 500 Easter dates and compares them to the algorithm results.
- * @note Source for Easter Dates: https://www.census.gov/srd/www/genhol/easter500.html
+ * note: Source for Easter Dates: https://www.census.gov/srd/www/genhol/easter500.html
  * @author Matt Wipfler
  */
 public class EasterDateTest {

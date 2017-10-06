@@ -6,7 +6,7 @@
 
 /**
  * Class for creating a 3D pyramid. Base is a regular polygon.
- * Vertex of pyramid is over centroid of base ->
+ * Vertex of pyramid is over centroid of base
  * @author Matt Wipfler
  */
 public class RegularRightPyramid extends ThreeDimension{

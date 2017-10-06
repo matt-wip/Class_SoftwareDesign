@@ -13,7 +13,6 @@ import java.awt.event.ActionListener;
  * View component of MVC framework. Implements GUI in framework. Derives from JFrame
  * @author Matt Wipfler
  */
-
 public class CalculatorView extends JFrame{
 
     // Private members
@@ -55,11 +54,13 @@ public class CalculatorView extends JFrame{
     private final JTextField inputField;
 
     // Accessors
-    /** Accessor for outputting current number in display*/
+    /** Accessor for outputting current number in display
+     * @return Text from input field*/
     public String getInputText() {
         return inputField.getText();
     }
-    /** Accessor for applying new number in display*/
+    /** Accessor for applying new number in display
+     * @param input new input text string*/
     public void setInputText(String input) {
         this.inputField.setText(input);
     }
@@ -111,7 +112,8 @@ public class CalculatorView extends JFrame{
         this.setVisible(true);
     }
 
-    /** Called by CalculatorController to connect Model logic to buttons*/
+    /** Called by CalculatorController to connect Model logic to buttons
+     * @param listener Handler for number button behavior*/
     public void addNumericButtonListener(ActionListener listener){
         this.zeroButton.addActionListener(listener);
         this.oneButton.addActionListener(listener);
@@ -126,7 +128,8 @@ public class CalculatorView extends JFrame{
         this.dotButton.addActionListener(listener);
     }
 
-    /** Called by CalculatorController to connect Model logic to buttons*/
+    /** Called by CalculatorController to connect Model logic to buttons
+     * @param listener Handler for operator button behavior*/
     public void addOperatorButtonListener(ActionListener listener){
         this.equalButton.addActionListener(listener);
         this.plusButton.addActionListener(listener);
