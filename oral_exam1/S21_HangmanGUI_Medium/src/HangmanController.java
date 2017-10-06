@@ -11,10 +11,16 @@ import java.awt.event.ActionListener;
 public class HangmanController {
 
     // Private members
+    /** Model component in MVC framework*/
     private HangmanModel hangmanModel;
+    /** View component in MVC framework*/
     private HangmanView hangmanView;
 
-    /**Constructor*/
+    /**
+     * Constructor, adds listeners
+     * @param hangmanModel Associated logic for application
+     * @param hangmanView Associated GUI for application
+     */
     public HangmanController(HangmanView hangmanView, HangmanModel hangmanModel){
         this.hangmanModel = hangmanModel;
         this.hangmanView = hangmanView;
@@ -22,21 +28,21 @@ public class HangmanController {
         hangmanView.addGuessButtonListener(new GuessButtonHandler());
     }
 
-
+    /**
+     * Handler for any component to call a guess. Implements ActionListener
+     * Process letter guess (Mmdel) and updates GUI (view)
+     */
      class GuessButtonHandler implements ActionListener{
         @Override
+        /** Implementation of ActionListener*/
         public void actionPerformed(ActionEvent e) {
             // Update View if the character is a new guess
             if(hangmanModel.TakeInGuess(hangmanView.getCharacterGuess())){
-                UpdateGUI();
+                // Update GUI
+                hangmanView.setGuessesLeftText(hangmanModel.getGuessesLeft());
+                hangmanView.setGuessedLettersText(hangmanModel.getGuessedLetters().toString());
+                hangmanView.setHiddenMessage(hangmanModel.getHiddenMessage());
             }
-        }
-
-        // Update necessary displays: guessLeft, guessedLetters, correctAnswer
-        private void UpdateGUI(){
-            hangmanView.setGuessesLeftText(hangmanModel.getGuessesLeft());
-            hangmanView.setGuessedLettersText(hangmanModel.getGuessedLetters().toString());
-            hangmanView.setHiddenMessage(hangmanModel.getHiddenMessage());
         }
     }
 }

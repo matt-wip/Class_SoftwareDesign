@@ -11,19 +11,28 @@ import java.util.*;
 public class HangmanModel {
 
     // Private members
+    /** Member to track number of tries left*/
     private int guessesLeft;
+    /** List to add guessed letters to*/
     private List<Character> guessedLetters;
+    /** Shhh... the first player can't know the hidden word/phrase*/
     private String secretWord;
 
     // Accessors
+    /** Obtain the number of guesses left*/
     public int getGuessesLeft() {
         return guessesLeft;
     }
+    /** Obtain the letters already guessed*/
     public List<Character> getGuessedLetters() {
         return guessedLetters;
     }
 
-    // Constructor
+    /**
+     * Constructor
+     * @param guessesLeft Initial number of tries
+     * @param secretWord The word to hide and display correct guesses
+     */
     public HangmanModel(int guessesLeft, String secretWord){
         this.guessesLeft = (guessesLeft < 2) ? 10 : guessesLeft;
         this.secretWord = secretWord.toLowerCase();

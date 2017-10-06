@@ -12,14 +12,20 @@ import java.awt.event.KeyEvent;
 public class HangmanView extends JFrame {
 
     // Private members
+    /** Field to input character guess*/
     private final JTextField enterCharacterField;
+    /** Button to press to call guess*/
     private final JButton enterGuessButton;
 
+    /** Label for displaying secret word with correctly guessed letters*/
     private final JLabel correctLetters;
+    /** Label for displaying list of guessed letters*/
     private final JLabel guessedLetters;
+    /** Label for displaying number of guesses left*/
     private final JLabel guessesLeft;
 
     // Accessors
+    /** Accessor that gets character from TextField and formats it to lowercase*/
     public char getCharacterGuess(){
         String entry = enterCharacterField.getText();
         if(entry.equals("") || entry.equals(" "))
@@ -29,16 +35,17 @@ public class HangmanView extends JFrame {
             return Character.toLowerCase(enterCharacterField.getText().charAt(0));
         }
     }
+    /** Method to adjust secret message label text*/
     public void setHiddenMessage(String message){correctLetters.setText(message);}
-
+    /** Method to update guess left label*/
     public void setGuessesLeftText(int countLeft){
         guessesLeft.setText(Integer.toString(countLeft));
     }
-
+    /** Method to update guessed letters label*/
     public void setGuessedLettersText(String usedLetters){
         guessedLetters.setText(usedLetters);
     }
-
+    /** Method to add ActionListener to GuessButton from an outside source {@link HangmanController}
     public void addGuessButtonListener(ActionListener listener){
         enterGuessButton.addActionListener(listener);
     }
