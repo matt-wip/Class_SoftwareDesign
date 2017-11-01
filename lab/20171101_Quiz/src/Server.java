@@ -65,7 +65,7 @@ public class Server extends JFrame {
         // create packet to send
         String premessage = new String("Server echos: " + receivePacket.getData());
         DatagramPacket sendPacket = new DatagramPacket(
-                premessage.getBytes(), premessage.length(),
+                premessage.getBytes(), premessage.getBytes().length,
                 receivePacket.getAddress(), receivePacket.getPort());
 
         socket.send(sendPacket); // send packet to client
