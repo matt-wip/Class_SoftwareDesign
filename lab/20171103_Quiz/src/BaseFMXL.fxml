@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" prefHeight="311.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseFMXL">
+<VBox alignment="CENTER" prefHeight="311.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseFMXL">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="498.0" text="Software Design!" textAlignment="CENTER">
          <font>
@@ -16,7 +15,7 @@
       </Label>
       <ImageView fitHeight="281.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../nfs/s-l011/local/vol02/m/mwipfler/IdeaProjects/mwipfler_swd/lab/20171103_Quiz/src/bug.png" />
+            <Image url="@bug.png" />
          </image>
       </ImageView>
    </children>

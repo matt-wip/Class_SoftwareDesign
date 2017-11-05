@@ -1,0 +1,8 @@
+Todo list for S1_Computus_Medium
+
+- Currently, the program is very specific and narrow in its capability.
+- Todo: could add a second param as the number of years after the inputted year to count the dates.
+- Todo: could create a 2d matrix to store dates for each day in a year
+- Todo: could separate code in 'main' method, make more readable?
+- Todo: improve for loop for adding dates. (need to add the 2d year matrix first)
+- Todo: could improve output results (do not display dates with 0 counts)
