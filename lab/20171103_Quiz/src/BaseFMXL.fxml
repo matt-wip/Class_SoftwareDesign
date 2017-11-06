@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="311.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BaseFMXL">
+<VBox alignment="CENTER" prefHeight="311.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXBase">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="498.0" text="Software Design!" textAlignment="CENTER">
          <font>
