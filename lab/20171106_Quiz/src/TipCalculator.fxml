@@ -39,7 +39,7 @@
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </TextField>
-      <TextField fx:id="totalTextField" accessibleRole="TEXT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <TextField fx:id="totalTextField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
@@ -87,6 +87,9 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="calculateButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="207.0" text="Calculate" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+      <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#calculateButtonPressed" prefHeight="25.0" prefWidth="207.0" text="Calculate" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
    </children>
 </GridPane>
