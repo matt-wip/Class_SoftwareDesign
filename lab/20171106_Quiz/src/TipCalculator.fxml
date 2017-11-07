@@ -31,7 +31,7 @@
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </TextField>
-      <TextField fx:id="tipPercentageSlider" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <TextField fx:id="tipValue" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
@@ -47,7 +47,7 @@
             <Insets left="10.0" right="10.0" />
          </GridPane.margin>
       </TextField>
-      <Slider fx:id="tipTextField" blockIncrement="5.0" max="30.0" minorTickCount="1" value="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Slider fx:id="tipSlider" blockIncrement="5.0" max="30.0" minorTickCount="1" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
