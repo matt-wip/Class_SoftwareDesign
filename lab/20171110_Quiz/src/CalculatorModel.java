@@ -51,7 +51,9 @@ public class CalculatorModel {
             num1 = Math.cos(num2);
         }
 
-        op = operator;
+        if(!operator.equals("="))
+            op = operator;
+
         return  num1;
     }
 }
