@@ -39,9 +39,6 @@ public class CalculatorController {
         calculatorDisplay.setText("");
     }
 
-    private void updateDisplay(){
-        calculatorDisplay.setText(Double.toString(model.calculate("=")));
-    }
     private  void updateNum2FromDisplay(){
         model.setNum2(Double.parseDouble(calculatorDisplay.getText()));
     }

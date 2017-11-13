@@ -10,9 +10,7 @@ public class CalculatorModel {
     }
 
     public CalculatorModel(){
-        num1 = 0;
-        num2 = 0;
-        op = "+";
+        this.clear();
     }
 
     public void clear(){
