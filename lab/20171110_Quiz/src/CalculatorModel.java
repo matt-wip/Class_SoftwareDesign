@@ -1,3 +1,5 @@
+// Matthew Wipfler
+
 public class CalculatorModel {
     // logic
 
