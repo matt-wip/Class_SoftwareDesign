@@ -10,8 +10,6 @@ public class CalculatorController {
 
     @FXML
     private TextField calculatorDisplay;
-    @FXML
-    private Button button7;
 
     public CalculatorController(){
         this.model = new CalculatorModel();
