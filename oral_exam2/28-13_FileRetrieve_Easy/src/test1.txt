@@ -1,0 +1,3 @@
+Hello. This is a test for less than 100 char lines
+This should be a new line
+And this
