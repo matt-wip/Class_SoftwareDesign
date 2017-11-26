@@ -11,7 +11,7 @@ public class TipCalculator extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception{
         try{
             Parent root = FXMLLoader.load(getClass().getResource("TipCalculator.fxml"));
             Scene mainScene = new Scene(root);
