@@ -12,7 +12,11 @@
       <module fileurl="file://$PROJECT_DIR$/lab/20170929_Quiz/20170929_Quiz.iml" filepath="$PROJECT_DIR$/lab/20170929_Quiz/20170929_Quiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab/20171101_Quiz/20171101_Quiz.iml" filepath="$PROJECT_DIR$/lab/20171101_Quiz/20171101_Quiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab/20171103_Quiz/20171103_Quiz.iml" filepath="$PROJECT_DIR$/lab/20171103_Quiz/20171103_Quiz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oral_exam2/28-17_Chess_Hard/28-17_Chess_Hard.iml" filepath="$PROJECT_DIR$/oral_exam2/28-17_Chess_Hard/28-17_Chess_Hard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20171106_Quiz/20171106_Quiz.iml" filepath="$PROJECT_DIR$/lab/20171106_Quiz/20171106_Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/20171110_Quiz/20171110_Quiz.iml" filepath="$PROJECT_DIR$/lab/20171110_Quiz/20171110_Quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/21-26_InsertDelete_Medium/21-26_InsertDelete_Medium.iml" filepath="$PROJECT_DIR$/oral_exam2/21-26_InsertDelete_Medium/21-26_InsertDelete_Medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/23-13_CircularBuffer_Medium/23-13_CircularBuffer_Medium.iml" filepath="$PROJECT_DIR$/oral_exam2/23-13_CircularBuffer_Medium/23-13_CircularBuffer_Medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oral_exam2/28-13_FileRetrieve_Easy/28-13_FileRetrieve_Easy.iml" filepath="$PROJECT_DIR$/oral_exam2/28-13_FileRetrieve_Easy/28-13_FileRetrieve_Easy.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch03/Fig03_12/Fig03_12.iml" filepath="$PROJECT_DIR$/class_demos/ch03/Fig03_12/Fig03_12.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch03/Fig03_13/Fig03_13.iml" filepath="$PROJECT_DIR$/class_demos/ch03/Fig03_13/Fig03_13.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch04/Fig04_04-05/Fig04_04-05.iml" filepath="$PROJECT_DIR$/class_demos/ch04/Fig04_04-05/Fig04_04-05.iml" />
@@ -63,7 +67,6 @@
       <module fileurl="file://$PROJECT_DIR$/class_demos/supplemental/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/class_demos/supplemental/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab/Myfig2-6/Myfig2-6.iml" filepath="$PROJECT_DIR$/lab/Myfig2-6/Myfig2-6.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam2/S18_MergeSort_Medium/S18_MergeSort_Medium.iml" filepath="$PROJECT_DIR$/oral_exam2/S18_MergeSort_Medium/S18_MergeSort_Medium.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oral_exam2/S19_OrbitingPlanets_Hard/S19_OrbitingPlanets_Hard.iml" filepath="$PROJECT_DIR$/oral_exam2/S19_OrbitingPlanets_Hard/S19_OrbitingPlanets_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/extra_credit/S1_Computus_Easy/S1_Computus_Easy.iml" filepath="$PROJECT_DIR$/extra_credit/S1_Computus_Easy/S1_Computus_Easy.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam1/S1_Computus_Hard/S1_Computus_Hard.iml" filepath="$PROJECT_DIR$/oral_exam1/S1_Computus_Hard/S1_Computus_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/extra_credit/S1_Computus_Medium/S1_Computus_Medium.iml" filepath="$PROJECT_DIR$/extra_credit/S1_Computus_Medium/S1_Computus_Medium.iml" />
@@ -73,7 +76,6 @@
       <module fileurl="file://$PROJECT_DIR$/oral_exam2/S22_ImageRotator_Hard/S22_ImageRotator_Hard.iml" filepath="$PROJECT_DIR$/oral_exam2/S22_ImageRotator_Hard/S22_ImageRotator_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam1/S23_ShapeInheritanceHierarchy_Medium/S23_ShapeInheritanceHierarchy_Medium.iml" filepath="$PROJECT_DIR$/oral_exam1/S23_ShapeInheritanceHierarchy_Medium/S23_ShapeInheritanceHierarchy_Medium.iml" />
       <module fileurl="file://$PROJECT_DIR$/oral_exam1/S2_OneTimePad_Hard/S2_OneTimePad_Hard.iml" filepath="$PROJECT_DIR$/oral_exam1/S2_OneTimePad_Hard/S2_OneTimePad_Hard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oral_exam2/S9_MultithreadingDNA_Hard/S9_MultithreadingDNA_Hard.iml" filepath="$PROJECT_DIR$/oral_exam2/S9_MultithreadingDNA_Hard/S9_MultithreadingDNA_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch15/SerializationApps/SerializationApps.iml" filepath="$PROJECT_DIR$/class_demos/ch15/SerializationApps/SerializationApps.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/supplemental/SupermarketSimulation/SupermarketSimulation.iml" filepath="$PROJECT_DIR$/class_demos/supplemental/SupermarketSimulation/SupermarketSimulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/class_demos/ch15/TextFileApps/TextFileApps.iml" filepath="$PROJECT_DIR$/class_demos/ch15/TextFileApps/TextFileApps.iml" />
