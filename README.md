@@ -11,5 +11,3 @@ Fun :smile: links for in-depth understanding :thumbsup:
 - [ ] http://www.lynda.com/Git-training-tutorials/1383-0.html
 - [ ] http://www.xkcd.com
 - [ ] http://stackoverflow.com
-    - [ ] NO CHEATING:exclamation: Provide proper attribution
-    - [ ] See Course policies https://uiowa.instructure.com/courses/66104/pages/course-policies
